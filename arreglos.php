@@ -23,6 +23,10 @@
         return $sum/count($vector); 
  }
 
+ function mayorVector(){
+//continuará
+ }
+
 
     $vec=array();
 
