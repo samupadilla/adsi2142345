@@ -15,6 +15,14 @@
             }
         return $sum; 
     }
+    function promedioVector($vector){
+        $sum=0;
+        for ($i=0; $i <count($vector) ; $i++) { 
+                $sum+=$vector[$i];
+            }
+        return $sum/count($vector); 
+ }
+
 
     $vec=array();
 
@@ -30,7 +38,8 @@
 
     echo '<br> la suma de vec2 es= <br>'.sumaVector($vec2);
     echo '<br> la suma de vec es= <br>'.sumaVector($vec);
-
+    echo '<br> promedio de vec2 es= <br>'.promedioVector($vec2);
+    echo '<br> promedio de vec es= <br>'.promedioVector($vec);
 
 
     // $sum=0;
